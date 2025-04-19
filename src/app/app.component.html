@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HII
+    </title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #c41572;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .welcome {
+            font-size: 1.2em;
+        }
+
+        .login-button {
+            background-color: #4c30c9;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .login-button:hover {
+            background-color: #4c97ae;
+        }
+
+        .container {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            background-color: #f8f8f8;
+            width: 250px;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .sidebar-menu {
+            width: 100%;
+        }
+
+        .sidebar-menu button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: none;
+            background-color: #fff;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar-menu button:hover {
+            background-color: #eee;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #6d15d8;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            text-align: left;
+        }
+
+        .developer {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="welcome">Welcome, guest</div>
+        <a href="#" class="login-button">Login</a>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="aaa.jpg" alt="Logo">
+            </div>
+            <div class="sidebar-menu">
+                <button>My Profile</button>
+                <button>Contact Us</button>
+                <button>About Us</button>
+                <button>Add User</button>
+                <button>Get Universities</button>
+            </div>
+        </aside>
+        <main class="content">
+            <p>Please click Login to continue.</p>
+        </main>
+    </div>
+
+    <footer>
+        <div class="copyright">Copyright IIH 2025</div>
+        <div class="developer">Developed By:LAITH AL-MAHARMA</div>
+    </footer>
+
+    <script>
+        const loginButton = document.querySelector('.login-button');
+        if (loginButton) {
+            loginButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert("You are now logged in!");
+            });
+        }
+    </script>
